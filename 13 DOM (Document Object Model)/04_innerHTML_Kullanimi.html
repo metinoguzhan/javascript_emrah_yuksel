@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - innerHtml Kullanımı</title>
+</head>
+<body>
+
+	<p id = "udemy">Udemy Kurs Eğitmeni Emrah Yüksel</p>
+	<br><br>
+
+
+	<p id="ad">Emrah</p>
+	<p id="soyad">Yüksel</p>
+
+	<script type="text/javascript">
+		
+		var e = document.getElementById("udemy").innerHTML;
+		console.log(e)
+
+		var ad = document.getElementById("ad").innerHTML;
+		var soyad = document.getElementById("soyad").innerHTML;
+
+		document.write(ad + " " + soyad + "<br>")
+
+
+		//İçerik Değiştirme
+		document.getElementById("ad").innerHTML = "Metin"
+		document.getElementById("soyad").innerHTML = "Oğuzhan"
+
+
+	</script>
+</body>
+</html>

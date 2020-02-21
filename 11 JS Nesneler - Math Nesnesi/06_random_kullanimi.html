@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Random Kullanımı</title>
+	<script type="text/javascript">
+		
+		var e = Math.random()
+		document.write(e + "<br>")
+
+		/*
+			PROJE ÖDEVİ
+			1 ve 10 arasında bir sayı üretin 
+			sayı 1-5 arasında çıkarsa kazandınız yazsın 
+			6 ve 10 arasında çıkarsada kaybettinz yazsın 
+		*/
+
+		/*
+		var rastgele = Math.round((Math.random() * 9) + 1)
+		
+		document.write(rastgele + "<br>")
+		if (rastgele>=1 && rastgele<=5) {
+			document.write("Kazandınız..")
+		}else{
+			document.write("Kaybettiniz..")
+		}
+		*/
+
+		var e = Math.round(Math.random() * 10)
+		if (e<6) {
+			document.write("Şanslı Numara : " + e + "<br>Tebrikler Kazandınız.")
+		}else{
+			document.write("Şanslı Numara : " + e + "<br>Üzgünüm Kaybettiniz.")
+		}
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

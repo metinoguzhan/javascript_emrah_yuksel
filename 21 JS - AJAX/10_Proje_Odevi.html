@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Proje Ödevi</title>
+</head>
+<body>
+
+	
+	<input type="text" id="not" name="not">
+	<button type="submit" onclick="islem()">Hesapla</button>
+
+	<div id="sonuc"></div>
+	
+
+	<script type="text/javascript">
+
+		function islem () {
+			var not = document.getElementById("not").value
+			var xhttp = new XMLHttpRequest()
+
+			xhttp.open("POST", "not.php", true)
+			xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+			xhttp.send("not="+not)
+
+			xhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("sonuc").innerHTML = this.responseText
+				}
+			}
+		}
+
+	</script>
+
+</body>
+</html>

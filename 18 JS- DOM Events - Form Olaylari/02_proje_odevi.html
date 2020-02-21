@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Proje Ödevi</title>
+</head>
+<body>
+	<input id="ad" type="text" onblur="kontrol()" placeholder="Sayı Giriniz" name="">
+	<div id = "sonuc"></div>
+	
+	<script type="text/javascript">
+		
+		function kontrol () {
+			var e = document.getElementById("sonuc")
+			var count = document.getElementById("ad").value.length
+
+			if (count<6) {
+				e.innerHTML = "karakter sayısı 6' dan küçük olamaz"
+			}else{
+				e.innerHTML = "Girdiğiniz sayı geçerli"
+			}
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - altKey, ctrlKey, shiftKey Kullanımı</title>
+</head>
+<body>
+	<input type="text" onkeydown="islem()" placeholder="Bir tuşa basın" name="">
+	
+	<div id="sonuc"></div>
+	
+
+	<script type="text/javascript">
+		function islem () {
+			var x = document.getElementById("sonuc")
+			if(event.altKey){
+				x.innerHTML = "ALT Tuşuna basıldı."
+			}else if(event.ctrlKey){
+				x.innerHTML = "CTRL Tuşuna basıldı."
+			}else if(event.shiftKey){
+				x.innerHTML = "SHIFT Tuşuna basıldı."
+			}else{
+				x.innerHTML = "ALT, CTRL veya SHIFT Tuşuna basınız."
+			}
+		}	
+	</script>
+
+</body>
+</html>

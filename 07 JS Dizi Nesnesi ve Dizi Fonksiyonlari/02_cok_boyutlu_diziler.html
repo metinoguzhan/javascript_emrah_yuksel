@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Çok Boyutlu Diziler</title>
+	<script type="text/javascript">
+
+		var kurs = new Array("Php","Bootstrap")
+		var kurslar = new Array(2)
+
+		for(var i = 0; i < 2; i++){
+			kurslar[i] = new Array(2)
+		}
+
+		kurslar[0][0] = "Emrah Yüksel"
+		kurslar[0][1] = "23 Saat"
+		kurslar[0][2] = "Udemy"
+
+
+		kurslar[1][0] = "Emrah Yüksel"
+		kurslar[1][1] = "11 Saat"
+		kurslar[1][2] = "Udemy"
+
+
+		for(var i = 0;i<2; i++){
+			document.write(kurs[i] + "<br>")
+			for(var y = 0 ; y < 3; y++){
+				document.write(kurslar[i][y]+"<br>")
+			}
+		}
+		
+		document.write("<br><br>")
+
+		var myArray = new Array(
+			new Array("İstanbul","Çanakkale","Balıkesir"),
+			new  Array("Adıyaman","Bitlis","Siirt"),
+			new Array("Samsun","Ordu","Trabzon")
+		)	
+
+		console.log(myArray[0][2])
+		console.log(myArray[1][1])
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

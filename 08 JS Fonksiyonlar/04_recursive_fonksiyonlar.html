@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Recursive Fonksiyonlar</title>
+	<script type="text/javascript">
+		
+		var i = 0
+
+		function tekrarla (argument) {
+			if (i<argument) {
+				i++
+				document.write(i + "<br>")
+				tekrarla(argument)
+			}
+		}
+
+		tekrarla(5)
+
+
+		//Proje Ödevi
+		/*
+			Girilen parametre değerine kadar olan sayıları toplayan recursive fonksiyon yazınız
+		*/
+
+		var i = 1, sum = 0
+		function topla(argument) {
+			if (i<=argument) {
+				sum += i
+				i++
+				topla(argument)
+			}
+		}
+
+		topla(15)
+		document.write("Toplam değeri : " + sum)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

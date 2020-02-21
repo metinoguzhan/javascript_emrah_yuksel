@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onKeyUp Olayi</title>
+</head>
+<body>
+
+	<input id="sec" type="text" placeholder="Bir tuşa basın" name="" onkeyup="up()" onkeydown="down()">
+	
+
+	<script type="text/javascript">
+		
+		function down () {
+			document.getElementById("sec").style.backgroundColor = 'red'
+		}
+		function up () {
+			document.getElementById("sec").style.backgroundColor = 'green'
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Which Kullanımı</title>
+</head>
+<body>
+
+	<button onmousedown="islem()">Mouse Tuşundan birine tıkla</button>
+	<div id ="sonuc"></div>
+	<script type="text/javascript">
+		
+		/*
+
+			Which
+			1 => Mouse Sol Tuşu
+			2 => Mouse Orta Tuşu
+			3 => Mouse Sağ Tuşu
+		*/
+
+		function islem () {
+			document.getElementById("sonuc").innerHTML = "Tıkladığınız Tuş : " + event.which
+		}
+
+	</script>
+
+
+</body>
+</html>

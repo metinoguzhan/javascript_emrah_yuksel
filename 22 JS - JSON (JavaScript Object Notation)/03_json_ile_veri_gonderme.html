@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Json ile Veri Gönderme</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<h1>JSON Veri Gönderme</h1>
+	<button onclick="gonder()">JSON Gönder</button>
+	<script type="text/javascript">
+		
+		function gonder () {
+			
+
+			var veriler = {
+				ad:"emrah",
+				soyad:"yuksel",
+				kurum:"udemy"	
+			}
+			
+
+			var hazir = JSON.stringify(veriler);	
+			window.location = "json-oku.php?veri=" + hazir;
+
+		}
+		
+		
+
+	</script>
+
+</body>
+</html>

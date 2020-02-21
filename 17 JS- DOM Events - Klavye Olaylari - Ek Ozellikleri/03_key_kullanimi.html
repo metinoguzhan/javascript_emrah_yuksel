@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - charCode, Which ve KeyCode Kullanımı</title>
+</head>
+<body>
+	<input type="text" onkeydown="islem()" placeholder="Bir tuşa basın" name="">
+	
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		
+		function islem () {
+			
+			 var x = event.key
+
+			document.getElementById("sonuc").innerHTML = "Unicode Karakter : " + x
+		}
+
+
+
+	</script>
+
+
+</body>
+</html>

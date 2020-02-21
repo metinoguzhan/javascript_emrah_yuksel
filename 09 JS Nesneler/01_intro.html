@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Intro</title>
+	<script type="text/javascript">
+		
+		var araba = {
+			marka:"ford",
+			renk:"gri",
+			yil:"2004",
+			km:"34500"
+		}
+
+		console.log(araba)
+
+
+		//functionla nesne tanımlama
+
+		function car (marka,renk,yil,km) {
+			this.marka = marka
+			this.renk = renk
+			this.yil = yil
+			this.km = km
+		}
+
+		var araba1 = new car("Kia","Kırmızı","2019","0")
+		console.log(araba1)
+
+		var araba2 = new car("Toyota","Gri","2020","1500")
+		console.log(araba2)
+
+
+
+		//
+		var emrah = new Object()
+		emrah.tc = "123456789"
+		emrah.boy = "190cm"
+		emrah.yas = "32"
+
+		console.log(emrah)
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Try Catch Finally Kullanımı</title>
+	<script type="text/javascript">
+		var a = 20 
+		var b = 20 
+
+		try {
+			if(a < b){
+				throw "buyuk"
+			}
+
+			if (a == b) {
+				throw "eşit"
+			}
+			document.write(a + " ve " + b)
+		} catch(err) {
+		
+			if (err == "buyuk") {
+				document.write("a sayısı b den büyük olamaz<br>")
+			}
+
+			if (err == "eşit") {
+				document.write("a sayısı b sayısına eşit olamaz<br>")
+			}
+		} finally{
+			document.write("ben her türlü çalışırım<br>")
+			document.write("ben her türlü çalışırım<br>")
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

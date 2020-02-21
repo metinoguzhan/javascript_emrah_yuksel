@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - getElementById</title>
+	<style type="text/css">
+		#metin{
+			background-color: green;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<p id="udemy">Udemy Kursları</p>
+	
+	
+	<input id="adGir" type="text" placeholder="Adınızı Girin" name=""><br><br>
+	
+	<input id="sec" type="checkbox" name=""> Seçim Yap
+	<br><br>
+	
+	<button type="button" id="islem" onclick="renklendir()">Id Değiştir</button>
+
+	<button id="secimYap" onclick="secimYap()">İşaretle</button>
+
+
+	<script type="text/javascript">
+		
+		console.log(document.getElementById("udemy"))
+		
+		function renklendir () {
+			document.getElementById("udemy").id = "metin"
+			document.getElementById("adGir").placeholder = "Soyadınızı Girin"
+		}	
+
+		function secimYap () {
+			document.getElementById("sec").checked = true
+		}
+	</script>
+</body>
+</html>

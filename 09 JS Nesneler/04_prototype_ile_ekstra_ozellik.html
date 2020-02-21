@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Prototype ile Nesnelere Ekstra Özellik</title>
+	<script type="text/javascript">
+		
+
+		function araba (marka,renk,model) {
+			this.marka = marka
+			this.renk = renk
+			this.model = model
+		}
+
+		araba.prototype.fiyat = 20000
+
+		var araba1 = new araba("Ford","gri","1980")
+		console.log(araba1)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

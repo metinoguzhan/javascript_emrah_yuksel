@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - getElementsByTagName Kullanımı</title>
+</head>
+<body>
+
+	<p>Udemy Kursları</p>
+	<p>Emrah Yüksel</p>
+	<p>Php Kursu</p>
+	<ul>
+		<li>Php</li>
+		<li>Bootstrap 4</li>
+		<li>Javascript</li>
+		<li>JQuery</li>
+	</ul>
+	<br><br>
+	<button type="button" onclick="say()">Elemanları Say</button>
+	<script type="text/javascript">
+		
+		console.log(document.getElementsByTagName("p"))
+		/*
+		var e = document.getElementsByTagName("p")
+		alert(e.length)
+		*/
+
+		function say () {
+			alert(document.getElementsByTagName("li").length + " eleman bulunmaktadır..") 
+		}
+
+	</script>
+</body>
+</html>

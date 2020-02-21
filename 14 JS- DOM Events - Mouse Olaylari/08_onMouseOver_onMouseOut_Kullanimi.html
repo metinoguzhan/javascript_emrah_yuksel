@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onMouseOver ve onMouseOut Kullanımı</title>
+	<style type="text/css">
+		div{
+			width: 150px;
+			height: 150px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="sec" onmouseover="geldi(this)" onmouseout="gitti()"></div>
+	<script type="text/javascript">
+		
+		function geldi (param) {
+			param.innerHTML = "Fare Geldi"
+		}
+
+		function gitti () {
+			document.getElementById("sec").innerHTML = "Fare Gitti"
+		}
+
+	</script>
+
+</body>
+</html>

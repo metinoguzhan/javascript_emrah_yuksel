@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onInvalid Kullanimi</title>
+</head>
+<body>
+
+	<form>
+		<input id="sec" required="" type="text" placeholder="Bir değer girin" name="" oninvalid="alert('Boş bırakamazsın');islem()">
+
+		<button type="submit">Gönder</button>
+	</form>
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		function islem(){
+			document.getElementById("sonuc").innerHTML = "Boş bırakamazsınız"
+		}
+	</script>
+
+</body>
+</html>

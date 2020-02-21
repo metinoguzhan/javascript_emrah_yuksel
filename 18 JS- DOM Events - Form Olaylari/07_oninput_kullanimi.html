@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onInput Kullanımı</title>
+
+</head>
+<body>
+	<input id="sec" oninput="islem()" type="text" placeholder="Bir değer girin" name="">
+	
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		
+		function islem () {
+			var deger = document.getElementById("sec").value
+
+
+			document.getElementById("sonuc").innerHTML = "Yazdıklarınız : " + deger
+		}
+
+	</script>
+</body>
+</html>

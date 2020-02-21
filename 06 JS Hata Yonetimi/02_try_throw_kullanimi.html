@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Try Throw Kullanımı</title>
+	<script type="text/javascript">
+		var a = 20 
+		var b = 20
+
+		try {
+			if(a < b){
+				throw "buyuk"
+			}
+			if (a == b) {
+				throw "eşit"
+			}
+			document.write(a + " ve " + b)
+		} catch(err) {
+			document.write(err+"<br>")
+			if (err == "buyuk") {
+				document.write("a sayısı b den büyük olamaz..")
+			}		
+
+			if (err == "eşit") {
+				document.write("a sayısı b sayısına eşit olamaz..")
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

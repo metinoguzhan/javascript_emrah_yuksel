@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onchange Kullanımı</title>
+</head>
+<body>
+
+	<select id = "udemy" onchange="kontrol()">
+		<option>PHP</option>
+		<option>Bootstrap 4</option>
+		<option>Javascript/option>
+		<option>JQuery</option>
+	</select>
+
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		function kontrol () {
+			var x = document.getElementById("udemy").value
+			document.getElementById("sonuc").innerHTML = "Seçtiğiniz Kurs : " + x
+		}
+	</script>
+
+
+</body>
+</html>

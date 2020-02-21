@@ -1,0 +1,10 @@
+{
+	"ad":"Emrah",
+	"soyad":"Yüksel",
+	"kurslar":[
+		{"kursAd":"php","yayinci":"udemy"},
+		{"kursAd":"javascript","yayinci":"udemy"},
+		{"kursAd":"jquery","yayinci":"udemy"},
+		{"kursAd":"bootstrap 4","yayinci":"udemy"}
+	]
+}

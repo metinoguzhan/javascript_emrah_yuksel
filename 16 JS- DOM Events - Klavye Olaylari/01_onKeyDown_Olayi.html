@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onKeyDown Olayi</title>
+</head>
+<body>
+
+
+	<input onkeydown="islem()" type="text" placeholder="Bir tuşa basın" name="">
+	<br><br>
+
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		var i = 0
+		function islem () {
+			//console.log("olay oldu")
+			i+=1
+			document.getElementById("sonuc").innerHTML = i
+		}
+	</script>
+
+</body>
+</html>

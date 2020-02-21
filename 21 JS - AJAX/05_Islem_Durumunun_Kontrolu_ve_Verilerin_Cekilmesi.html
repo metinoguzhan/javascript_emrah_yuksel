@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Sunucuya İstek Gönderme ve Alma</title>
+</head>
+<body>
+
+
+	<h2>HttpRequest Nesnesi</h2>
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		
+
+		var xhttp = new XMLHttpRequest()
+		console.log(xhttp)
+		xhttp.open("GET","kurslar.txt",true)
+		xhttp.send()
+
+		xhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("sonuc").innerHTML = this.responseText
+			}else{
+				document.getElementById("sonuc").innerHTML = "Bir problem var : " + this.statusText
+			}
+		}
+	
+	</script>
+
+</body>
+</html>
+

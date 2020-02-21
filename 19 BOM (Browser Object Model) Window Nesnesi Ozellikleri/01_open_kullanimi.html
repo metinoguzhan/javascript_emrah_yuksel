@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - open Kullanımı</title>
+</head>
+<body>
+	<input id="sayi1" type="text" name=""> +
+	<input id="sayi2" type="text" name="">
+	<button onclick="islem()">Topla ve Yeni Pencere Aç</button>
+	<script type="text/javascript">
+		function islem () {
+			
+			var yeniPencere = window.open("method", "yeniPencere", "width=250,height = 250")
+			
+			var sayi1 = parseInt(document.getElementById("sayi1").value)
+			
+			var sayi2 = parseInt(document.getElementById("sayi2").value)
+
+			yeniPencere.document.write("<h1>Sonuç : "+(sayi1 + sayi2)+"</h1>")
+		}
+	</script>
+
+</body>
+</html>

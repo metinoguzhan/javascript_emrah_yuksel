@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - RemoveChild Kullanımı</title>
+</head>
+<body>
+
+	<ul id="udemy">
+		<li>Php</li>
+		<li>Bootstrap 4</li>
+		<li>Javascript</li>
+		<li>JQuery</li>
+	</ul>
+
+	<button type="button" onclick="islem()">Sil</button>
+
+	<script type="text/javascript">
+
+
+		function islem () {
+			var list = document.getElementById("udemy")
+			list.removeChild(list.childNodes[0])
+		}		
+
+
+	</script>
+</body>
+</html>

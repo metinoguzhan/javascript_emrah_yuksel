@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - outerwidth ve outerheight kullanımı</title>
+</head>
+<body>
+	<button onclick="islem()">Göster</button>
+	<div id="sonuc"></div>
+	<script type="text/javascript">
+		function islem () {
+			var w = window.outerWidth
+			var h = window.outerHeight
+
+			document.getElementById("sonuc").innerHTML = "Width : " + w + " - Hieght : " + h
+		}
+	</script>
+
+</body>
+</html>

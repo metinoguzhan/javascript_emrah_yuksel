@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - clientX ve clientY</title>
+</head>
+<body>
+
+
+	<img onclick="islem(event)" src="img/farkresim.jpg">
+	
+	<div id = "sonuc"></div>
+
+	<script type="text/javascript">
+		
+		function islem (event) {
+			var x = event.clientX
+			var y = event.clientY
+			/*
+			document.getElementById("sonuc").innerHTML = "X Kordinatı : " + x + " Y Kordinatı : " + y
+			*/
+			if ((x>228 && x<249) &&  (y>226 && y <246)) {
+				document.getElementById("sonuc").innerHTML = "Kalp Bulundu.. "+ "Kordinatı : " + x + " Y Kordinatı : " + y
+			}
+		}
+
+
+		//x => 228 and 249
+		//y => 226 and 246
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Nesnenin Alt Özelliklerine Erişme</title>
+	<script type="text/javascript">
+		
+
+		var araba = {
+			marka:"ford",
+			renk:"gri",
+			yil:"2004",
+			km:"34500"
+		}
+
+		console.log(araba.marka)
+		console.log(araba.renk)
+
+
+		function car (marka,renk,yil,km) {
+			this.marka = marka
+			this.renk = renk
+			this.yil = yil
+			this.km = km
+		}
+
+		var araba1 = new car("Kia","Kırmızı","2019","0")
+		console.log(araba1.marka)
+		console.log(araba1.yil)
+
+
+		var emrah = new Object()
+		emrah.tc = "123456789"
+		emrah.boy = "190cm"
+		emrah.yas = "32"
+
+		console.log(emrah.boy)
+
+
+
+		//
+
+		var arabalar = [
+			{
+				marka:"Ford",
+				renk:"gri",
+				yil:"2002",
+				km:"354300"
+			},
+			{
+				marka:"Hyundai",
+				renk:"gri",
+				yil:"2004",
+				km:"34344"
+			},
+			{
+				marka:"kia",
+				renk:"kırmızı",
+				yil:"2010",
+				km:"234"
+			}
+		]
+
+		for (araba in arabalar) {
+			console.log(arabalar[araba])
+		}
+
+		console.log(arabalar)
+		console.log(arabalar[0].marka)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - clientX ve clientY</title>
+</head>
+<body>
+
+
+	<img onclick="islem(event)" src="img/farkresim.jpg">
+	<div id = "sonuc"></div>
+
+	<script type="text/javascript">
+		
+		function islem (event) {
+			var x = event.clientX
+			var y = event.clientY
+
+			document.getElementById("sonuc").innerHTML = "X Kordinatı : " + x + " Y Kordinatı : " + y
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Proje Ödevi</title>
+</head>
+<body>
+
+	<button id = "kaybol" onclick="islem()">Tıkla ve Yok Et</button>
+
+	<img id = "reklam" onclick="reklamKapat(event)" src="http://via.placeholder.com/350x150">
+
+	<div id ="sonuc"></div>
+	
+	<script type="text/javascript">
+			
+		function islem () {
+			x = event.detail
+			if (x == 1) {
+				document.getElementById("kaybol").style.display="none"
+				document.getElementById("sonuc").innerHTML = "Button Yok Oldu"
+			}
+		}
+
+
+		function reklamKapat (event) {
+			x = event.detail
+			if (x == 1) {
+				document.getElementById("reklam").style.display = "none"
+				
+			}
+		}
+
+	</script>
+
+
+</body>
+</html>

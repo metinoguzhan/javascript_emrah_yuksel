@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - test.html Veri çekme</title>
+</head>
+<body>
+
+	<h2>HttpRequest Nesnesi</h2>
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		var xhttp = new XMLHttpRequest()
+		xhttp.open("GET", "test.html", true)
+		xhttp.send()
+		
+
+		xhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("sonuc").innerHTML = xhttp.responseText
+			}else{
+				document.getElementById("sonuc").innerHTML = "İşler Ters Gitti : " + xhttp.statusText
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğtimi</title>
+</head>
+<body>
+
+	<h1>History Nesnesi Özellikleri</h1>
+
+	<button onclick="geri()">Geri</button>
+	<button onclick="ileri()">İleri</button>
+	<button onclick="goster()">2 geri</button>
+	<a href="https://www.udemy.com">1.Linke Git</a>
+	<a href="https://www.emrahyuksel.com.tr">2.Linke Git</a>
+	<script type="text/javascript">
+		
+
+		function geri () {
+			window.history.back()
+		}
+
+		function ileri () {
+			window.history.forward()	
+		}
+
+		function goster () {
+			window.history.go(-2)
+		}
+
+	</script>
+</body>
+</html>

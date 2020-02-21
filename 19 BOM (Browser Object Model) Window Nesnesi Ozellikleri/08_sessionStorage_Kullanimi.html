@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Session Storage Kullanımı</title>
+</head>
+<body>
+	
+	<button onclick="olustur()">Session Oluştur</button>
+	
+	<button onclick="yaz()">Session Oku ve Yaz</button>
+	
+	<button onclick="sil()">Session Sil</button>
+
+	<button onclick="allSessionDelete()">Bütün Session Sil</button>
+	
+
+	<div id="sonuc"></div>
+
+
+
+	<script type="text/javascript">
+		function olustur () {
+			sessionStorage.setItem("ad","Metin")
+			sessionStorage.setItem("soyad","Oğuzhan")
+		}
+
+		function yaz(){
+			document.getElementById("sonuc").innerHTML = "Adı : " + sessionStorage.getItem("ad") + " - Soyadı : " + sessionStorage.getItem("soyad")
+		}
+
+		function sil () {
+			sessionStorage.removeItem("ad")
+		}
+
+		function allSessionDelete () {
+			sessionStorage.clear()
+		}
+	</script>
+
+</body>
+</html>

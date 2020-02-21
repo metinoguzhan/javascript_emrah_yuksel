@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onClick</title>
+</head>
+<body>
+	<h1 onclick="icerikDegistir(this)">Udemy Kursları</h1>
+	<p id="tarihsaat"></p>
+	<button onclick="displayDate()">Tarih ve Saati Göster</button>
+	<br><br>
+	<hr>
+	<br><br>
+
+	Sayı 1 : <input type="text" id="sayi1" placeholder="1. Sayı"><br>
+	Sayı 2 : <input type="text" id="sayi2" placeholder="2. Sayı"><br><br>
+	<b id="sonuc"></b><br><br>
+	<button onclick="hesapla()">Hesapla</button>
+	
+
+	<script type="text/javascript">
+		
+
+		function icerikDegistir (icerik) {
+			icerik.innerHTML = "Udemy Kurslarına Hoş Geldiniz"
+		}
+
+		function displayDate () {
+			document.getElementById("tarihsaat").innerHTML = new Date()
+		}
+
+		function hesapla () {
+			var sayi1 = document.getElementById("sayi1").value
+			var sayi2 = document.getElementById("sayi2").value
+
+			var result = parseInt(sayi1)  + parseInt(sayi2) 
+			
+			document.getElementById("sonuc").innerHTML = result
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onKeyPress Olayi</title>
+</head>
+<body>
+
+
+	<textarea onkeypress="islem()" rows="4" cols="25"></textarea>
+	<br><br>
+
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		var i = 0
+		function islem () {
+			//console.log("olay oldu")
+			i+=1
+			document.getElementById("sonuc").innerHTML = i
+			if (i>=160) {
+				document.getElementById("sonuc").innerHTML = i + " karakter aşımı"
+			}
+		}
+	</script>
+
+</body>
+</html>

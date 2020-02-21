@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - For in Döngüsü</title>
+	<script type="text/javascript">
+		
+		
+		//Nesne Örneği
+		var kurslar = {
+			kurs1:"Php",
+			kurs2:"Bootstrap"
+		}
+
+		for (key in kurslar) {
+			document.write(kurslar[key] +"<br>")
+		}
+		
+
+		//Dizi örneği
+
+		var egitimler = new Array("php","bootstrap","JQuery")
+
+
+		for (egitim in egitimler) {
+			document.write("Eğitimler : " + egitimler[egitim] + "<br>")
+		}
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

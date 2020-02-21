@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Intro</title>
+	<script type="text/javascript">
+		
+		function topla () {
+			var a = 10,b=30
+			return sonuc = a + b
+		}
+
+		document.write(topla() + "<br>")
+
+
+		function topla2 (sayi1,sayi2) {
+			return sayi1 + sayi2
+		}
+
+		document.write(topla2(5,99) + "<br>")
+
+
+		function topla3(sayi1,sayi2){
+			document.write(sayi1+sayi2 +"<br>")
+		}
+
+		topla3(99,99)
+
+
+	/*
+	Proje Ödev 1
+	Doğum yılınızı girdiğinizde size yaşınızı söyleyen fonksiyonu yazın
+	*/
+
+	function calculateAge (birthDate) {
+		now = new Date().getFullYear()
+		document.write(now - birthDate + "<br>")
+	}
+
+	function calculateAge2 (birthDate) {
+		now = new Date().getFullYear()
+		return now - birthDate
+	}
+
+
+	calculateAge(1986 )
+	document.write(calculateAge2(1990) + "<br>")
+
+
+	/*
+	Proje Ödevi 2 
+	*/
+
+	function selamla (name,birthDate) {
+		now = new Date().getFullYear()
+		document.write(name + " yaşınız : " + (now - birthDate))
+	}
+
+	selamla("Metin",1986)
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+	</html>

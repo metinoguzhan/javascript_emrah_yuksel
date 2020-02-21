@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onSelect Kullanımı</title>
+</head>
+<body>
+	<input id="sec" type="text" onselect="islem()">
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		function islem () {
+			var x = document.getElementById("sec")
+			document.getElementById("sonuc").innerHTML = "Seçim Yaptınız : " + x.value
+		}
+	</script>
+
+</body>
+</html>

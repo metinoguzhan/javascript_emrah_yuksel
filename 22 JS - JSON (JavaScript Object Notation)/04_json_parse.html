@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+
+	<h2>JSON Parse Kullanımı</h2>
+
+	<script type="text/javascript">
+		
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET","json-veri.txt",true)
+		xmlhttp.send()
+
+		xmlhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				var veriler = JSON.parse(this.responseText)
+				console.log(veriler)
+			}
+		}
+
+	</script>
+
+</body>
+</html>

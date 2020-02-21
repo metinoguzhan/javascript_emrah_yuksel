@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onSearch Kullanımı</title>
+</head>
+<body>
+
+	<input id = "sec" type="search" required="" onsearch="islem()">
+	
+	<div id="sonuc"></div>
+	
+
+	<script type="text/javascript">
+		function islem () {
+			var x = document.getElementById("sec")
+			document.getElementById("sonuc").innerHTML ="Aranan Kelime : " + x.value
+		}
+	</script>
+
+</body>
+</html>

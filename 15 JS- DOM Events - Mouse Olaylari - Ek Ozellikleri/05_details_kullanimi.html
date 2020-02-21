@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Detail Kullanımı</title>
+</head>
+<body>
+
+	<button onclick="islem()">Tıklasana</button>
+	<div id ="sonuc"></div>
+	
+	<script type="text/javascript">
+			
+		function islem () {
+			document.getElementById("sonuc").innerHTML = "Tıkladığınız Tuş sayısı : " + event.detail
+		}
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - attribute ve setAttribute Kullanımı</title>
+
+</head>
+<body>
+
+
+	<a id="udemy">Udemy Sitesine Git</a><br>
+	<input type="button" value="Ekle" onclick="islem()" name="">
+	<input type="button" value="Target" onclick="targetEkle()" name="">
+	<script type="text/javascript">
+		
+		function islem () {
+			document.getElementById("udemy").setAttribute("href", "https://www.udemy.com")
+
+	
+			var e = document.getElementById("udemy").attributes
+			console.log(e)
+		}		
+
+
+		function targetEkle () {
+			var y = document.getElementById("udemy")
+            console.log(y)
+			
+			if (!y.hasAttribute("target")) {
+				y.setAttribute("target", "_blank")
+			}	
+
+			
+		}
+
+	</script>
+
+</body>
+</html>

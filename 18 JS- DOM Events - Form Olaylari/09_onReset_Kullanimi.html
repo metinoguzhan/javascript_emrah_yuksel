@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onReset Kullanimi</title>
+</head>
+<body>
+
+	<form onreset="islem()">
+		<input type="text" required="" placeholder="Adınız" name="">
+		<input type="text" required="" placeholder="Soyadınız" name="">
+		<button type="submit">Gönder</button>
+		<button type="reset">Temizle</button>
+	
+	</form>
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+		function islem(){
+			document.getElementById("sonuc").innerHTML = "Form Temizlendi.."
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Alt Ctrl ve Shift Key</title>
+</head>
+<body>
+
+
+
+	<button onmousedown="islemCtrl(event)">CTRL Tuşuna basarak Tıkla</button>
+
+	<button onmousedown="islemAlt(event)">ALT Tuşuna basarak Tıkla</button>
+
+	<button onmousedown="islemShift(event)">SHIFT Tuşuna basarak Tıkla</button>
+
+	<script type="text/javascript">
+		
+		function islemCtrl (event) {
+			if (event.ctrlKey) {
+				alert("Ctrl tuşuna basılıyken mouse ile tıkladınız..")	
+			}else{
+				alert("CTRL Tuşuna basılmadı")
+			}
+		}
+
+
+		function islemAlt (event) {
+			if (event.altKey) {
+				alert("ALT tuşuna basılıyken mouse ile tıkladınız..")	
+			}else{
+				alert("ALT Tuşuna basılmadı")
+			}
+		}
+
+
+		function islemShift (event) {
+			if (event.shiftKey) {
+				alert("SHIFT tuşuna basılıyken mouse ile tıkladınız..")	
+			}else{
+				alert("SHIFT Tuşuna basılmadı")
+			}
+		}
+
+
+
+	</script>
+
+</body>
+</html>

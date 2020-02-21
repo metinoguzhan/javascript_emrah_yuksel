@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onMouseUp ve onMouseDown Kullanımı</title>
+	<style type="text/css">
+		div{
+			width: 150px;
+			height: 150px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="sec" onmouseup="cekildi(this)" onmousedown="basıldı()"></div>
+	<script type="text/javascript">
+		
+		function cekildi (param) {
+			param.innerHTML = "tuşa çekildi"
+		}
+
+		function basıldı () {
+			document.getElementById("sec").innerHTML = "tuştan basıldı"
+		}
+
+	</script>
+
+</body>
+</html>

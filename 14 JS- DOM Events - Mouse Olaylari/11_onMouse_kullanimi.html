@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onMouseMove Kullanımı</title>
+</head>
+<body>
+
+	<button onmousemove="dolas(this)">Üzerinde Dolaş</button>
+
+	<div id = "sonuc"></div>
+	
+	<script type="text/javascript">
+		
+		function dolas (argument) {
+			var x = event.clientX
+			var y = event.clientY
+			var top = "X Koordinatı : " + x + "  Y Koordinatı : " + y
+
+			argument.innerHTML = top
+		}
+
+
+	</script>
+
+</body>
+</html>

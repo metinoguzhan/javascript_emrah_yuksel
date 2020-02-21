@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Proje Ödevi</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		var obj1 = [{
+			ad:"Metin",
+			soyad:"Oguzhan",
+			yas:"34"
+		},{
+			ad:"Emre",
+			soyad:"Yasar",
+			yas:"35"
+		},{
+			ad:"Ersin",
+			soyad:"Vergili",
+			yas:"36"
+		},{
+			ad:"Gokhan",
+			soyad:"Pehlivan",
+			yas:"37"
+		}]
+
+
+		for (key in obj1) {
+			document.write(obj1[key].ad + " " + obj1[key].soyad + "<br>")
+		}
+
+
+		document.write("-------------------<br>")
+		document.write("-------------------<br>")
+
+		var obj2 = {
+			"ad":"Mustafa",
+			"soyad":"Karadeniz",
+			"yas" : "22"
+		}
+
+		for (key in obj2) {
+			document.write(obj2[key] + "<br>")
+		}
+
+	</script>
+
+</body>
+</html>

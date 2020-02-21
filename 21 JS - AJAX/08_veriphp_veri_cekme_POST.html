@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi</title>
+</head>
+<body>
+
+	<h2>HttpRequest Nesnesi</h2>
+	<div id="sonuc"></div>
+	<script type="text/javascript">
+		
+
+		var xhttp = new XMLHttpRequest()
+		xhttp.open("POST", "veri.php", true)
+		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+		xhttp.send("ad=Metin&soyad=Oguzhan")
+
+
+		xhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("sonuc").innerHTML = this.responseText
+			}else{
+				document.getElementById("sonuc").innerHTML = "Hata Oluştu : " + this.statusText
+			}
+		}
+
+
+	</script>
+
+</body>
+</html>

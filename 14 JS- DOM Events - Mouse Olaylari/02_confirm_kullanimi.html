@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Confirm Kullanımı</title>
+</head>
+<body>
+
+	<button onclick="islem()">Onay Mesajı</button>
+	<div id="sonuc"></div>
+	<script type="text/javascript">
+		
+		function islem () {
+			var e = confirm("Onaylıyor musunuz ?")
+
+			if (e) {
+				document.getElementById("sonuc").innerHTML = "Onay Verildi.."
+			}else{
+				document.getElementById("sonuc").innerHTML = "Onay Verilmedi.."
+			}
+		}
+
+	</script>
+
+</body>
+</html>

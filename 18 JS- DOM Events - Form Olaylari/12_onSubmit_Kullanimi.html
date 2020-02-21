@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onSubmit Kullanımı</title>
+</head>
+<body>
+
+	<form onsubmit="islem()">
+		<input id="sec" type="text" required="">
+		<input type="submit" value="Gönder" name="">
+	</form>
+
+	<div id="sonuc"></div>
+	<script type="text/javascript">
+		function islem () {
+			var x = document.getElementById("sec")
+			alert("Başarıyla Gönderildi.." + x.value)
+		}
+	</script>
+</body>
+</html>

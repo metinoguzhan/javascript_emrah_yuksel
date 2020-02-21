@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - onFocusin ve onFocusout Kullanımı</title>
+</head>
+<body>
+
+	<input onfocusin="islem(this)" type="text" placeholder="Bir tuşa basın" name="">
+	
+	<input onfocusout="kaydet(this)" type="text" placeholder="Bir tuşa basın" name="">
+
+
+	<script type="text/javascript">
+		
+		function islem (x) {
+			x.style.background = "red"
+			x.style.color = "white"
+		}
+
+		function kaydet(argument){
+			argument.style.background = 'green'
+		}
+
+	</script>
+</body>
+</html>

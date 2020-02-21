@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Proje Ödevi</title>
+</head>
+<body>
+
+
+	<img id = "bulb" onmouseover="overMouse(this)" onmouseout="outMouse()" src="img/kapali.png">
+
+	<script type="text/javascript">
+		
+
+		function overMouse (param) {
+
+				param.setAttribute("src","img/acik.png")
+		}
+
+		function outMouse () {
+			document.getElementById("bulb").src="img/kapali.png"
+		}
+
+	</script>
+
+
+</body>
+</html>

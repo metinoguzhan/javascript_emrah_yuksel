@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - Nesnelere Metod Ekleme</title>
+	<script type="text/javascript">
+		
+		var ogrenci = {
+			ad:"Metin",
+			soyad:"Oguzhan",
+			yas:34,
+			adSoyad:function () {
+				return this.ad + " " + this.soyad
+			},
+			yasHesap:function () {
+				return new Date().getFullYear() - this.yas
+			}
+		}
+
+		document.write(ogrenci.adSoyad() + "<br>")
+		document.write(ogrenci.yasHesap() + "<br>")
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

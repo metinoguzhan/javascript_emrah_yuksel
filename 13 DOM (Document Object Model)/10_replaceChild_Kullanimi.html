@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - AppendChild ve createTextNode Kullanımı</title>
+</head>
+<body>
+
+	<ul id="udemy">
+		<li>Php</li>
+		<li>Bootstrap 4</li>
+		<li>Javascript</li>
+		<li>JQuery</li>
+	</ul>
+
+	<button type="button" onclick="islem()">Sil</button>
+	<button type="button" onclick="ekle()">Ekle</button>
+	<button type="button" onclick="degistir()">Değiştir</button>
+	<script type="text/javascript">
+
+
+		function islem () {
+			var list = document.getElementById("udemy")
+			list.removeChild(list.childNodes[0])
+		}		
+
+		function ekle () {
+			var e = document.createElement("li")
+			var x = document.createTextNode("WordPress")
+			e.appendChild(x)
+
+			document.getElementById("udemy").appendChild(e)
+		}
+
+
+		function degistir () {
+			var t = document.createTextNode("Emrah")
+			var eklee = document.getElementById("udemy").childNodes[1]
+			eklee.replaceChild(t, eklee.childNodes[0])
+		}
+
+	</script>
+</body>
+</html>

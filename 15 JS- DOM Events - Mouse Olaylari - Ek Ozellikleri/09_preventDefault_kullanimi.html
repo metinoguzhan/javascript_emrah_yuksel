@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Eğitimi - preventDefault Kullanımı</title>
+
+</head>
+<body>
+
+
+	<a id="sec" href="http://www.google.com" target="_blank">Google Git</a>
+
+	<script type="text/javascript">
+		
+		document.getElementById("sec").addEventListener("click",function(event){
+			event.preventDefault()
+		})
+
+
+	</script>
+
+</body>
+</html>
